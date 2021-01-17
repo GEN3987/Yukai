@@ -1,0 +1,317 @@
+<html lang="en"><head>
+
+  <meta charset="UTF-8">
+  
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Yukai Creators Official Site">
+<meta property="og:title" content="Yukai Creators - Minecraft マップ制作チーム | Yukai Creaters公式Webサイトです。">
+<meta property="og:url" content="https://www.mc-team.work/">
+<meta property="og:description" content="Yukai Creatorsオフィシャルサイト">
+<meta property="og:image" content="https://cdn.discordapp.com/icons/767738512710828095/eda8f91dffd73bcb3a01937e4ea2f7ff.webp?size=128">
+<meta name="keywords" content="Yukai","Creators","Yukai Creators","YukaiCreators","ゆかい","くりえいたー","ユカイ","クリエイター","ユカイクリエイター">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+ <link rel="shortcut icon" href="https://cdn.discordapp.com/icons/767738512710828095/eda8f91dffd73bcb3a01937e4ea2f7ff.webp?size=128">
+
+
+
+  <title>Yukai Creators - Minecraft マップ制作チーム | Yukai Creaters公式Webサイトです。</title>
+  
+<style>
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#nav-toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 32px;
+  cursor: pointer;
+}
+#nav-toggle > div {
+  position: relative;
+  width: 36px;
+}
+#nav-toggle span {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  display: block;
+  background: #000;
+  position: absolute;
+  -webkit-transition: top .5s ease, -webkit-transform .3s ease-in-out;
+  transition: top .5s ease, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, top .5s ease;
+  transition: transform .3s ease-in-out, top .5s ease, -webkit-transform .3s ease-in-out;
+  /* #nav-toggle close */
+}
+#nav-toggle span:nth-child(1) {
+  top: 0;
+}
+#nav-toggle span:nth-child(2) {
+  top: 14px;
+}
+#nav-toggle span:nth-child(3) {
+  top: 28px;
+}
+#nav-toggle:hover span:nth-child(1) {
+  top: 4px;
+}
+#nav-toggle:hover span:nth-child(3) {
+  top: 23px;
+}
+
+.open #nav-toggle span:nth-child(1) {
+  top: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.open #nav-toggle span:nth-child(2) {
+  top: 15px;
+  width: 0;
+  left: 50%;
+}
+.open #nav-toggle span:nth-child(3) {
+  top: 15px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* z-index */
+#nav-toggle {
+  z-index: 1000;
+}
+
+#container {
+  z-index: 900;
+}
+
+#gloval-nav nav {
+  z-index: 999;
+}
+
+#gloval-nav {
+  background-image: linear-gradient(-45deg, #FF00BF, #FFEA00);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-size: 29px;
+  padding-left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.open #gloval-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#gloval-nav a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 0;
+  -webkit-transition: color .6s ease;
+  transition: color .6s ease;
+}
+#gloval-nav ul {
+  list-style: none;
+}
+#gloval-nav ul li {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transition: -webkit-transform 1.3s ease;
+  transition: -webkit-transform 1.3s ease;
+  transition: transform 1.3s ease;
+  transition: transform 1.3s ease, -webkit-transform 1.3s ease;
+  position: relative;
+}
+#gloval-nav ul li:after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 2px;
+  background: #000;
+  left: -600px;
+  position: absolute;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+#gloval-nav ul li:hover:after {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+#gloval-nav ul li:nth-child(2) {
+  -webkit-transition-delay: .15s;
+          transition-delay: .15s;
+}
+#gloval-nav ul li:nth-child(3) {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+#gloval-nav ul li:nth-child(4) {
+  -webkit-transition-delay: .45s;
+          transition-delay: .45s;
+}
+#gloval-nav ul li:nth-child(5) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+#gloval-nav ul li:nth-child(6) {
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+}
+#gloval-nav ul li:nth-child(7) {
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.open #gloval-nav li {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-bg {
+  opacity: 0;
+  background-image: linear-gradient(-45deg, #FF00BF, #FFEA00);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.nav-bg.active {
+  opacity: 1;
+}
+.nav-bg.news {
+  background-image: linear-gradient(-45deg, #4400FF, #FFEA00);
+}
+.nav-bgabout {
+  background-image: linear-gradient(-45deg, #00FFCC, #FFEA00);
+}
+.nav-bg.works {
+  background-image: linear-gradient(-45deg, #EB1405, #FFEA00);
+}
+.nav-bg.contact {
+  background-image: linear-gradient(-45deg, #8B05EB, #FFEA00);
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" class="close">
+  <div id="nav-toggle">
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<strong>
+<div id="gloval-nav">
+	<nav>
+		<ul id="navigation">
+			<li><a href="https://www.mc-team.work/">トップ</a></li>
+			<li><a href="https://www.mc-team.work/download/">ダウンロード</a></li>
+			<li><a href="https://www.mc-team.work/boshu/">募集</a></li>
+			<li><a href="https://www.mc-team.work/about/">その他</a></li>
+			<li><a href="https://www.mc-team.work/contact/">コンタクト</a></li>
+		</ul>
+	</nav>
+
+	<div id="nav-bg-wrap">
+		<div class="nav-bg top"></div>
+		<div class="nav-bg download"></div>
+		<div class="nav-bg boshu"></div>
+		<div class="nav-bg about"></div>
+		<div class="nav-bg contact"></div>
+	  </div>
+</div>
+</strong>
+
+<div id="container">
+<center>
+  <h1>Yukai Creators
+</h1>
+<br>
+<h3>現在開発中です。</h3>
+</center>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  
+      <script id="rendered-js">
+(function ($) {
+  $(function () {
+    $('#nav-toggle').on('click', function () {
+      $('body').toggleClass('open');
+    });
+    $('#navigation li').on({
+      'mouseenter': function () {
+        var index = $(this).index();
+        $('#nav-bg-wrap .nav-bg').eq(index).addClass('active');
+
+      },
+      'mouseleave': function () {
+        var index = $(this).index();
+        $('#nav-bg-wrap .nav-bg').eq(index).removeClass('active');
+      } });
+
+  });
+})(jQuery);
+    </script>
+
+  
+
+
+
+
+ 
+</body></html>
