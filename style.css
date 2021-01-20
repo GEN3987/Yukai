@@ -3,12 +3,12 @@
   padding: 0.3em 1em;
   text-decoration: none;
   color: #67c5ff;
-  border: solid 2px #67c5ff;
+  border: solid 2px #faae2b;
   border-radius: 3px;
   transition: .4s;
 }
 
 .btn:hover {
-  background: #67c5ff;
+  background: #faae2b;
   color: white;
 }
